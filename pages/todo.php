@@ -18,11 +18,11 @@
 <body>
 
 
-<form action="index.php?page=tods&action=register" method="post">
-    Owner Email:<input type="text" name="owneremail" value= "<?php if(property_exists($data->owneremail)){echo $data->owneremail;}?> "> <br>
-    Due date: <input type="text" name="Duedate" value="<?php if(property_exists($data->duedate)){echo $data->duedate;}?> " > <br>
-    Message: <input type="text" name="Message" value="<?php if(property_exists($data->message)){echo $data->message;}?> "> <br>
-    Is Done: <input type="text" name="isdone" value="<?php if(property_exists($data->isdone)){echo $data->isdone;}?>  "> <br>
+<form action="index.php?page=tasks&action=create" method="post">
+    Owner Email:<input type="text" name="owneremail" value= "<?php echo $data->owneremail;?> "> <br>
+    Due date: <input type="text" name="duedate" value="<?php echo $data->duedate;?> " > <br>
+    Message: <input type="text" name="message" value="<?php echo $data->message;?> "> <br>
+    Is Done: <input type="text" name="isdone" value="<?php echo $data->isdone;?>  "> <br>
 
     <input type="submit" value="Submit form">
 </form>
