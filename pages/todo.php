@@ -18,14 +18,12 @@
 <body>
 
 
-<form action="index.php?page=accounts&action=register" method="post">
-    First name: <input type="text" name="fname"><br>
-    Last name: <input type="text" name="lname"><br>
-    Email: <input type="text" name="email"><br>
-    Phone: <input type="text" name="phone"><br>
-    Birthday: <input type="text" name="birthday"><br>
-    Gender: <input type="text" name="gender"><br>
-    Password: <input type="password" name="password"><br>
+<form action="index.php?page=tods&action=register" method="post">
+    Owner Email:<input type="text" name="owneremail" value= "<?php if(property_exists($data->owneremail)){echo $data->owneremail;}?> "> <br>
+    Due date: <input type="text" name="Duedate" value="<?php if(property_exists($data->duedate)){echo $data->duedate;}?> " > <br>
+    Message: <input type="text" name="Message" value="<?php if(property_exists($data->message)){echo $data->message;}?> "> <br>
+    Is Done: <input type="text" name="isdone" value="<?php if(property_exists($data->isdone)){echo $data->isdone;}?>  "> <br>
+
     <input type="submit" value="Submit form">
 </form>
 
