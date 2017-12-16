@@ -86,6 +86,9 @@ class accountsController extends http\controller
         self::getTemplate('edit_account', $record);
 
     }
+
+
+
 //this is used to save the update form data
     public static function save() {
         $user = accounts::findOne($_REQUEST['id']);
@@ -108,6 +111,12 @@ class accountsController extends http\controller
         header("Location: index.php?page=accounts&action=all");
     }
 
+    public static function logout(){
+        session_start();
+        unset($_SESSION['userID']);
+        header("Location: index.php");
+
+    }
     //this is to login, here is where you find the account and allow login or deny.
     public static function login()
     {
@@ -133,7 +142,9 @@ class accountsController extends http\controller
                 $_SESSION["userID"] = $user->id;
 
                 //forward the user to the show all todos page
-                print_r($_SESSION);
+               // print_r($_SESSION);
+                header("Location: index.php?page=tasks&action=all");
+
             } else {
                 echo 'password does not match';
             }

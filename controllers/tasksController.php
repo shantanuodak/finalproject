@@ -37,8 +37,6 @@ class tasksController extends http\controller
 
 
 
-
-
         /*session_start();
            if(key_exists('userID',$_SESSION)) {
                $userID = $_SESSION['userID'];
@@ -114,7 +112,9 @@ class tasksController extends http\controller
     {
         $record = todos::findOne($_REQUEST['id']);
         $record->delete();
-        print_r($_POST);
+
+        header("Location: index.php?page=tasks&action=all");
+
 
     }
 

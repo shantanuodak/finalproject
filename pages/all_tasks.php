@@ -30,7 +30,7 @@ if ($data == false){
     print utility\htmlTable::genarateTableFromMultiArray($data);
 }
 
-
+ echo '<h1><a href="index.php?page=accounts&action=logout">Logout</a></h1>';
 
 
 ?>
