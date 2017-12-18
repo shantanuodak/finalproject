@@ -138,13 +138,7 @@ class routes
         $route->method = 'register';
         $routes[] = $route;
         //this handles the reg post to create the user
-        $route = new route();
-        $route->http_method = 'POST';
-        $route->action = 'register';
-        $route->page = 'accounts';
-        $route->controller = 'accountsController';
-        $route->method = 'store';
-        $routes[] = $route;
+
 
         $route = new route();
         $route->http_method = 'POST';
@@ -177,7 +171,6 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'logout';
         $routes[] = $route;
-
 
         return $routes;
     }

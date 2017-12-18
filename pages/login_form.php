@@ -1,9 +1,10 @@
 
+<?php include "header.php";?>
+
 
 </form>
 
 <h1><a href="index.php?page=accounts&action=register">Register</a></h1>
-
 
 <form action="index.php?page=accounts&action=login" method="POST">
     <div class="form-group">
