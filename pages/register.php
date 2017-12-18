@@ -1,16 +1,13 @@
-<?php include 'header.php'?>
+<?php
 
-
-
-
-
+include 'header.php' ?>
 
 <body>
 
 <h1>Registration form</h1>
 
 
-<form action="index.php?page=accounts&action=register" method="post">
+<form action="index.php?page=accounts&action=register" method="POST">
     <div class="form-group">
         <label for="exampleInputfname">First name</label>
         <input type="text" class="form-control" name="fname" id="exampleInputfname" aria-describedby="emailHelp" placeholder="Enter first name">
@@ -43,7 +40,7 @@
 
 
     </div>
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button  type="submit" class="btn btn-primary">Register</button>
 </form>
 
 

@@ -1,30 +1,36 @@
-<!doctype html>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+<h2>Enter the details to create a new task</h2>
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+<br>
+<br>
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
+<?php include "header.php";?>
 
 <body>
 
 
 <form action="index.php?page=tasks&action=create" method="post">
-    Owner Email:<input type="text" name="owneremail" value= "<?php echo $data->owneremail;?> "> <br>
-    Due date: <input type="text" name="duedate" value="<?php echo $data->duedate;?> " > <br>
-    Message: <input type="text" name="message" value="<?php echo $data->message;?> "> <br>
-    Is Done: <input type="text" name="isdone" value="<?php echo $data->isdone;?>  "> <br>
+    <div class="form-group">
+        <label for="exampleInputfname"> Owner E-mail</label>
+        <input type="text" class="form-control" name="owneremail" id="exampleInputfname" aria-describedby="emailHelp" value="<?php echo $data->owneremail;?>">
+    </div>
 
-    <input type="submit" value="Submit form">
+    <div class="form-group">
+        <label for="exampleInputlname">Due Date</label>
+        <input type="datetime-local" class="form-control" name="duedate" id="exampleInputlname" placeholder="Lastname" value="<?php echo $data->duedate;?>">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPhone">Message</label>
+        <input type="text" class="form-control" name="message" id="exampleInputPhone" aria-describedby="emailHelp" placeholder="Enter message" value=" <?php echo $data->message;?> ">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputBirthday">Is Done?</label>
+        <input type="text" class="form-control" name="isdone" id="exampleInputBirthday" aria-describedby="emailHelp" placeholder="Enter date of birth" value="<?php echo $data->isdone;?> ">
+    </div>
+
+    <button type="submit" class="btn btn-primary" value="Submit form">Submit </button>
+
+
 </form>
 
 
