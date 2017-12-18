@@ -23,3 +23,33 @@
          </ul>
      </div>
  </nav>
+
+
+
+ <html>
+<style>
+
+   .text
+
+    {
+       position: absolute;
+       top: 20%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-family: "Adobe Ming Std";
+    }
+
+</style>
+
+
+ <body>
+
+<div>
+ <img class = image src="https://i1.wp.com/www.startswithavision.com/wp-content/uploads/2016/04/Productivity-A.jpg?fit=3200%2C1800" width="100%" height="950px">
+    <div class = text > <h1>Makes your life easier!</h1> </div>
+
+</div>
+
+ </body>
+
+ </html>
