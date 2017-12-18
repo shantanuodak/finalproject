@@ -16,15 +16,3 @@
 
 
 
-
-<h1>
-    <?php
-
-    //this how to print some data;
-    echo $data ['site_name'];
-
-
-    ?> </h1>
-
-
-
