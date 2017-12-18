@@ -39,8 +39,10 @@ include 'header.php' ?>
     </div>
 
 
-    </div>
+
     <button  type="submit" class="btn btn-primary">Register</button>
+
+
 </form>
 
 

@@ -21,13 +21,20 @@
         </ul>
     </div>
 </nav>
+<html>
+<style>
 
+    .text
 
+    {
+        height: 100%;
+        width: 100%;
+        background-image: url("http://i.hizliresim.com/v4Qykv.png");
+    }
 
+</style>
 
-
-
-<body>
+<body class=" text">
 
 <?php
 //this is how you print something

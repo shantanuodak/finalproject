@@ -1,10 +1,9 @@
 <!doctype html>
 
 <html lang="en">
-<head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
+    <title>Tasks</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
@@ -13,9 +12,21 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-</head>
 
-<body>
+
+<style>
+
+    .text
+
+    {
+        height: 100%;
+        width: 100%;
+        background-image: url("http://i.hizliresim.com/v4Qykv.png");
+    }
+
+</style>
+
+<body class= "text">
 
 <?php
 //this is how you print something  $data contains the record that was selected on the table.

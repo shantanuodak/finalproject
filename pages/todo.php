@@ -1,12 +1,26 @@
 
-<h2>Enter the details to create a new task</h2>
 
-<br>
-<br>
 
+<?php include "navbar.php";?>
 <?php include "header.php";?>
 
-<body>
+<br>
+
+<html>
+<style>
+
+    .text
+
+    {
+        height: 100%;
+        width: 100%;
+        background-image: url("http://i.hizliresim.com/v4Qykv.png");
+    }
+
+</style>
+
+<body class=" text">
+<h2>Enter the details to create a new task</h2>
 
 
 <form action="index.php?page=tasks&action=create" method="post">

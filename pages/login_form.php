@@ -1,11 +1,31 @@
 
 <?php include "header.php";?>
 
+<html>
 
-</form>
-<h1><CENTER> WELCOME TO THE FINAL PROJECT OF IS 601 </CENTER></h1><br>
 
-<h1><CENTER>" TASK MANAGEMENT SYSTEM "</CENTER></h1>
+
+<style>
+
+    .text
+
+    {
+        position: absolute;
+        top: 0%;
+        bottom: 70%;
+    }
+
+
+</style>
+
+<body background="http://i.hizliresim.com/v4Qykv.png">
+
+
+
+
+<h1 style="font-family: 'Adobe Ming Std';"> <CENTER> WELCOME TO THE FINAL PROJECT OF IS 601 </CENTER></h1><br>
+
+<h1 style="font-family: 'Adobe Ming Std';"> <CENTER>" TASK MANAGEMENT SYSTEM "</CENTER></h1>
 
 <h1>Account Login </h1><br>
 
@@ -29,3 +49,5 @@
 
 </form>
 
+</body>
+</html>
