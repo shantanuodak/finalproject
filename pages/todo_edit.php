@@ -1,34 +1,58 @@
-<!doctype html>
+<?php include "header.php";?>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.php">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.php?page=tasks&action=create"> Create Task <span class="sr-only">(current)</span></a>
+            </li>
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?page=accounts&action=logout">Logout</a>
+            </li>
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
+
+        </ul>
+    </div>
+</nav>
+
+<br>
+
 
 <body>
 
+<form action="index.php?page=accounts&action=register" method="post">
+    <div class="form-group">
+        <label for="exampleInputfname"> Owner E-mail</label>
+        <input type="text" class="form-control" name="fname" id="exampleInputfname" aria-describedby="emailHelp" placeholder="Enter first name" value="<?php echo $data->owneremail;?>">
+    </div>
 
-<form action="index.php?page=tasks&action=save&id=<?php echo $data->id;?>" method="post">
-    Owner Email:<input type="text" name="owneremail" value= "<?php echo $data->owneremail;?> "> <br>
-    Due date: <input type="text" name="duedate" value="<?php echo $data->duedate;?> " > <br>
-    Message: <input type="text" name="message" value="<?php echo $data->message;?> "> <br>
-    Is Done: <input type="text" name="isdone" value="<?php echo $data->isdone;?>  "> <br>
 
-    <input type="submit" value="Submit form">
-</form>
 
-<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-    <button type="submit" form="form1" value="delete">Delete</button>
+    <div class="form-group">
+        <label for="exampleInputlname">Due Date</label>
+        <input type="text" class="form-control" name="lname" id="exampleInputlname" placeholder="Lastname" value="<?php echo $data->duedate;?>">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPhone">Message</label>
+        <input type="text" class="form-control" name="phone" id="exampleInputPhone" aria-describedby="emailHelp" placeholder="Enter phone number" value=" <?php echo $data->message;?> ">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputBirthday">Is Done?</label>
+        <input type="text" class="form-control" name="birthday" id="exampleInputBirthday" aria-describedby="emailHelp" placeholder="Enter date of birth" value="<?php echo $data->isdone;?> ">
+    </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit </button>
+
+    <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
+        <button type="submit" class="btn btn-primary">Delete task</button>
+    </form>
 </form>
 
 
